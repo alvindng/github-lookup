@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("#user").empty();
     $("#user-pic").empty();
     $("#repos").empty();
+    $('#results').show();
     var search = $('#username').val();
     $('#username').val('');
     testSearch.getUser(search);

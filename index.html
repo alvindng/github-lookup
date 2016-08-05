@@ -9,22 +9,27 @@
   </head>
   <body>
     <div class="container">
-      <h1>GitHub Lookup!</h1>
-      <h3>Enter a GitHub username into the form, submit it, and see names and descriptions of that person's public repositories.</h3>
+      <div class="jumbotron">
+        <h1>GitHub Lookup!</h1>
+        <h3>Enter a GitHub username into the form, submit it, and see names and descriptions of that person's public repositories.</h3>
+      </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="form-group">
-            <form id="search" action="index.html" method="post">
-              <label for="username">Enter a username:</label>
-              <input class="form-control" type="text" name="username" id="username" value="">
+          <div class="well">
+            <div class="form-group">
+              <form id="search" action="index.html" method="post">
+                <label for="username">Enter a username:</label>
+                <input class="form-control" type="text" name="username" id="username" value="">
+              </div>
               <button type="submit" class="btn btn-success" name="button">Lookup User</button>
             </form>
           </div>
         </div>
         <div class="col-md-6">
-          <div id="results">
+          <div id="results" class="well">
             <div id="user"></div>
             <div id="user-pic"></div>
+            <h3>Repositories</h3>
             <div id="repos"></div>
           </div>
         </div>

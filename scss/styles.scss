@@ -1,14 +1,49 @@
 $blue : #e6ffff;
+$grey:  #e6e6e6;
+$yellow: #ffffcc;
+$black: #333333;
+$darkblue: #4d79ff;
+$red: #ffa366;
+
 
 body {
 background-color: $blue;
 }
 
-h1 {
+.jumbotron {
   text-align: center;
+  color: white;
+  background-color: $darkblue;
+  border-color: $red;
+  border-width: thick;
+  border-style: solid;
 }
 
 img {
   width: auto;
   height: 250px;
+  border-color: $yellow;
+  border-width: thick;
+  border-style: solid;
+}
+
+.well {
+  background-color: $darkblue;
+  color: white;
+  border-color: $red;
+  border-width: thick;
+  border-style: solid;
+  a {
+    color: $yellow;
+    text-decoration: underline;
+  }
+  button {
+    background-color: $red;
+    border-color: $red;
+    color: $darkblue;
+  }
+}
+
+#results {
+  display: none;
 }
