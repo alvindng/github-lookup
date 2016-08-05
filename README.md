@@ -7,31 +7,28 @@
 ## Description
 **GitHub Lookup**
 
-Website showcasing everything I learned in week 4 Ruby of Epicodus. This application is to incorporate all the concepts taught this week by creating a program to track shoe brands and what stores they are in. Here are the user stories:
-
-* As a user, I want to be able to add, update, delete and list shoe stores.
-* As a user, I want to be able to add shoe brands in the application (don't worry about updating, listing or destroying shoe brands).
-* As a user, I want to be able to add shoe brands to a store to show where they are sold.
-* As a user, I want to be able to see all of the brands a store sells on the individual store page.
-* As a user, I want store names and shoe brands to be saved with a capital letter no matter how I enter them.
-* As a user, I do not want stores and shoes to be saved if I enter a blank name.
+Website showcasing everything I learned in Epicodus week 1 of JavaScript. This application is to incorporate all the concepts taught this week by creating a program where the user can enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
 
 ## Setup/Installation Requirements
 
-* Download/clone repository from https://github.com/alvindng/shoe_distribution
+* Download/clone repository from https://github.com/alvindng/github-lookup
 * Run postgres
 * Run commands:
-  * rake db:create
-  * rake db:migrate
-  * rake db:test:prepare
-* Run Sinatra with command $: ruby app.rb
-* Visit 'localhost:4567' in your browser
+  * $ npm install
+  * $ bower install
+  * $ gulp build
+  * $ gulp serve
+* Create a Personal Access Token from Github:
+  * Visit the Settings area of your GitHub account, select Personal Access Tokens from the sidebar, and hit Generate New Token.
+  * GitHub will offer a list of options. Do not select any. These grant read/write permissions and access to personal data. Finally, select Generate Token.
+  * Place your token in an .env file at the top level of your directory. Include .env in .gitignore file.
+
 
 ## Support and contact details
 Contact Alvin Ng
 
 ## Technologies Used
-_HTML, CSS, Ruby, Bootstrap_
+_HTML, CSS, JavaScript, Bootstrap, Node, Sass, Bower, Gulp_
 
 ### License
 
