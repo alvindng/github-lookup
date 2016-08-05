@@ -5,7 +5,6 @@ function Github() {
 
 Github.prototype.getUser = function(user){
   $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
-    console.log(response);
     $('#user').append('<h3>User: ' + response.login + '</h3><h5>Name: ' + response.name + '</h5><h5>Email: ' + response.email + '</h5><h5>Followers: ' + response.followers + '</h5>');
     $('#user-pic').html("<img src='" + response.avatar_url + "'/>");
   }).fail(function(error){
