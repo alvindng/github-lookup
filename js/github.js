@@ -16,7 +16,8 @@ Github.prototype.getUser = function(user){
 Github.prototype.getRepos = function(user){
   $.get('https://api.github.com/users/' + user + '/repos?access_token=' + apiKey).then(function(response){
     response.forEach(function(repo){
-      $('#repos').append('<h4>Respository: ' + repo.name +'<br><h5> Description: '+ repo.description + '</h5></h4>');
+      console.log(repo);
+      $('#repos').append("<h4>Respository: <a href='" + repo.html_url + "'>" + repo.name + "</a><br><h5> Description: "+ repo.description + "</h5><br><h5> Creation Date: " + a + "</h5></h4>");
     });
   }).fail(function(error){
     console.log(error.responseJSON.message);
