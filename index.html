@@ -7,19 +7,23 @@
     <title>Github User Lookup</title>
   </head>
   <body>
-    <h1>GitHub Lookup!</h1>
-    <h3>Enter GitHub username into the form, submit it, and see names and descriptions of that person's public repositories.</h3>
-    <form id="search" action="index.html" method="post">
-      <label for="username">Enter a username:</label>
-      <input type="text" name="username" id="username" value="">
-      <button type="submit" name="button">Lookup User</button>
-    </form>
-    <div id="results">
-      <div id="user">
-
+    <div class="container">
+      <h1>GitHub Lookup!</h1>
+      <h3>Enter GitHub username into the form, submit it, and see names and descriptions of that person's public repositories.</h3>
+      <div class="form-group">
+        <form id="search" action="index.html" method="post">
+          <label for="username">Enter a username:</label>
+          <input class="form-control" type="text" name="username" id="username" value="">
+          <button type="submit" class="btn btn-success" name="button">Lookup User</button>
+        </form>
       </div>
-      <div id="repos">
-
+      <div id="results">
+        <div id="user">
+        </div>
+        <div id="user-pic">
+        </div>
+        <div id="repos">
+        </div>
       </div>
     </div>
   </body>

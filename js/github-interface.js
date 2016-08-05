@@ -3,12 +3,13 @@ var Github = require('./../js/github.js').githubModule;
 $(document).ready(function(){
   var testSearch = new Github();
 
-
   $('#search').submit(function(event){
     event.preventDefault();
+    $("#user").empty();
+    $("#user-pic").empty();
+    $("#repos").empty();
     var search = $('#username').val();
     $('#username').val('');
-    event.preventDefault();
     testSearch.getUser(search);
     testSearch.getRepos(search);
   });
