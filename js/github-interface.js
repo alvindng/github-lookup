@@ -9,6 +9,7 @@ $(document).ready(function(){
     var search = $('#username').val();
     $('#username').val('');
     event.preventDefault();
+    testSearch.getUser(search);
     testSearch.getRepos(search);
   });
 });
