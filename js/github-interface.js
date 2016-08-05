@@ -10,7 +10,5 @@ $(document).ready(function(){
     $('#username').val('');
     event.preventDefault();
     testSearch.getRepos(search);
-
-
   });
 });
